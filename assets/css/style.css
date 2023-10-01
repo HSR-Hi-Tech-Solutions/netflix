@@ -1,3 +1,6 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
 /* Hero Image */
 .hsr-hero-image{
 	background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/9db4a880-3034-4e98-bdea-5d983e86bf52/b5953637-091d-4e02-9754-2bfadc8a8f7c/IN-en-20230925-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
@@ -13,4 +16,118 @@
 
 .hsr-navbar{
 	padding: 1rem;
+}
+
+.hsr-hero-caption{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hsr-hero-caption h1,
+.hsr-section-heading{
+	font-weight: 900;
+	font-size: 3rem;
+}
+
+.hsr-caption-text{
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.hsr-search-text{
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.hsr-hero-btn{
+	padding: 0.75rem 2rem;
+	border-radius: 0.1875rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.form-floating input{
+	background: rgba(0,0,0,0.8);
+	color: white !important;
+	width: 400px;
+}
+
+.form-floating input:focus{
+	background: rgba(0,0,0,0.8) !important;
+	color: white !important;
+	box-shadow: none;
+	border-color: white;
+}
+
+.form-floating label{
+	background: transparent !important;
+}
+
+/* TV Section */
+
+.hsr-tv-section{
+	background: black;
+	border-bottom: 15px solid gray;
+}
+
+.form-floating input:focus ~ .form-floating label{
+	background: transparent !important;
+}
+
+.hsr-section-subheading{
+font-size: 1.6rem;
+}
+
+.hsr-tv-section img{
+	z-index: 1;
+	position: relative;
+}
+
+.hsr-tv-video{
+	z-index:0;
+	position: relative;
+	margin-top: -320px;
+	display: flex;
+	justify-content: center;
+}
+
+.hsr-tv-section .card{
+	width: 350px;
+	background: black !important;
+	border:2px solid gray;
+	border-radius: 10px;
+	position: relative;
+	top:-100px;
+	z-index: 1;
+}
+
+.hsr-tv-video video{
+	width:72.05%;
+	height: 76%;
+	display: flex;
+	justify-content: center;
+}
+
+/* FAQS */
+.hsr-faqs{
+	background: black;
+	border-bottom: 15px solid gray;
+}
+
+.hsr-faqs .accordion-item{
+	margin:1rem 0;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button {
+	font-size: 1.5rem;
+}
+
+.accordion-body{
+	font-size: 1.5rem;
 }
